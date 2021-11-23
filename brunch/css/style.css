@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+/*헤더
+---------------------------------------------------------*/
+body{
+    text-align: center;
+    width: 1280px;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+    color: #777;
+}
+
+.clear::after {
+    content: '';
+    display: block;
+    float: none;
+    clear: both;
+  }
+
+.menu-name {
+    margin: 100px;
+}
+.menu-name h3 {
+    font-size: 20px;
+    font-family: 'Noto Serif KR', serif;
+}
+.menu-name p {
+    color: #ccc;
+    margin-top: 10px;
+    font-size:13px;
+    font-weight: bold;
+}
+/**상단 배너*/
+#top-banner {
+    background-color: rgb(255, 249, 228);
+}
+#top-banner img {
+    width: 95%;
+}
+
+#hamburger {
+    display: block;
+    width: 30px;
+    height: 25px;
+    
+    background: url(../img/ico_view_cover.v4_rtn.png);
+    background-size: 300px;
+    margin: 40px 15px 0px 40px;
+    float: left;
+}
+#top-navi {
+    height: 90px;
+}
+#logo {
+    display: block;
+    width: 93px;
+    height: 30px;
+    background: url(../img/logo_brunch_v1.png);
+    background-size: 250px;
+    margin-top: 40px;
+    float: left;
+}
+
+#start{
+    display: block;
+    width: 80px;
+    height: 42px;
+    background: url(../img/ico_view_cover.v4_rtn.png);
+    background-position: -246px -82px;
+    background-size: 330px;
+    margin-top: 35px;
+    margin-left: 920px;
+    float: left;
+}
+#start p{
+    margin-top:12px;
+    color:#aaa;
+    font-size: 14px;
+}
+
+#search {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../img/ico_view_cover.v4_rtn.png);
+    background-position: -40px 0px;
+    background-size: 330px;
+    margin-top: 40px;
+    margin-left: 20px;
+    float: left;
+}
+/**소개글 */
+#title {
+    text-align:left;
+    font-family: 'Noto Serif KR', serif;
+    margin-left: 30px;
+}
+#title .tit_brunch {
+    font-size: 50px;
+    font-weight: normal;
+}
+#ico_logo{
+    display: inline-block;
+    width: 39px;
+    height: 40px;
+    background: url(../img/logo_brunch_v1.png);
+    background-position: 0px -79px;
+    background-size: 150px;
+    margin-top: 40px;
+}
+
+.desc_brunch {
+    font-size: 40px;
+}
+.desc_brunch .part {
+    display: inline-block;
+    margin-top:20px;
+    color: #aaa;
+}
+.desc_brunch .part .txt_brunch {
+    color: #ccc;
+}
+
+/**키워드*/
+#keyword {
+    width:1240px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#keyword ul li {
+    border: 1px solid #eee; 
+    width:150px;
+    height:150px;
+    float: left;
+}
+.key-cell{
+    margin-top:60px;
+}
+#keyword ul li:hover{
+    color: rgb(30, 230, 203);
+    border: 1px solid rgb(30, 230, 203);
+}
+
+/**작가추천*/
+#writers {
+    margin-top:100px;
+}
+/**하단 영역*/
+#footer-top {
+    height: 400px;
+    background-color: #000;
+    color: #fff;
+}
+
+#footer-first{
+    
+    height:100%;
+    width:380px;
+    float: left;
+}
+#lodo-white {
+    
+}
+#footer-second{
+    
+    height: 100%;
+    width:300px;
+    float: left;
+}
+#footer-third{
+   
+    height: 100%;
+    width:300px;
+    float: left;
+}
+#footer-fourth{
+    
+    height: 100%;
+    width:300px;
+    float: left;
+}
