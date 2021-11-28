@@ -11,6 +11,16 @@ a {
     text-decoration: none;
     color: #777;
 }
+.btn {
+    display: inline-block;
+    border: 1px solid#ddd;
+    padding: 10px;
+    border-radius: 40%;
+    background-color: #fff;
+}
+.btn:checked{
+    color: rgb(30, 230, 203);
+}
 
 .clear::after {
     content: '';
@@ -146,39 +156,132 @@ a {
 
 /**작가추천*/
 #writers {
-    margin-top:100px;
+    background-color:#eee;
+    display: block;
 }
+#writer-btn ul {
+    display: inline-block;
+    margin: 0 auto;
+}
+#writer-btn ul li {
+    float: left;
+    margin:0 10px;
+}
+.writer-cell {
+    width: 300px;
+    background-color: #fff;
+    margin: 30px;
+    padding-top: 30px;
+}
+.writer-cells {
+    float: left;
+}
+
+.writer-img{
+    width: 90px;
+    height: 90px; 
+    border-radius: 70%;
+    overflow: hidden;
+    margin: 40px auto;
+}
+.writer-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.writer-name{
+    font-size:30px;
+    font-family: 'Noto Serif KR', serif;
+    font-weight: normal;
+}
+.writer-info{
+    font-size:13px;
+    margin: 15px 0;
+}
+.writer-memo{
+    padding:0 30px 0;
+}
+.writer-btns{
+    margin-left: auto;
+    margin-right: auto;
+}
+.writer-btn {
+    float: left;
+    
+}
+
 /**하단 영역*/
 #footer-top {
-    height: 400px;
+    height: 300px;
     background-color: #000;
     color: #fff;
+    padding:50px 0 0 30px ;
 }
 
 #footer-first{
     
     height:100%;
-    width:380px;
+    width:40%;
     float: left;
+    font-family: 'Noto Serif KR', serif;
+    text-align: left;
 }
-#lodo-white {
-    
+#footer-first h3 {
+    font-size:20px;
+    font-weight: normal;
+}
+#footer-first p {
+    color: #aaa;
+    margin-top:10px;
+}
+#logo-white {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/ico_brunch_v9_20190819_rtn.png);
+    background-position: -125px 0px;
+    background-size: 250px;
+    margin-bottom: 30px;
 }
 #footer-second{
     
     height: 100%;
-    width:300px;
+    width:20%;
     float: left;
 }
 #footer-third{
    
     height: 100%;
-    width:300px;
+    width:20%;
     float: left;
 }
 #footer-fourth{
     
     height: 100%;
-    width:300px;
+    width:20%;
+    float: left;
+}
+
+.footer-list li {
+    margin-bottom: 30px;
+    text-align: left;
+}
+.footer-list li a {
+    color: #ddd;
+}
+#footer-bottom{
+   background-color: #000;
+   height: 30px;
+}
+#footer-bottom div {
+    float: left;
+    color: #ddd;
+    font-family: 'Noto Serif KR', serif;
+    font-size: 12px;
+    margin:0 1050px 0 30px;
+}
+#store-logo li img {
+    width: 30px;
+    height: 30px;
     float: left;
 }

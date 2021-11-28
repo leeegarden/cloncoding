@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="your-path-to-skippr.css">
   </head>
-  <body>
+  <>
     <!--상단 배너-->
     <div id="top-banner">
       <img src="img/93f162840b1a44b4b5e4f1d74426f24c.png">
@@ -61,12 +61,13 @@
 
     <!--상단 슬라이더-->
     <!--키워드-->
-    <div id="keyword">
+    <div id="keyword" class="clear">
       <div class="menu-name">
         <h3>B R U N C H &nbsp  K E Y W O R D</h3>
         <P>키워드로 분류된 다양한 글 모음</P>
       </div>
-      <ul>
+      <div>
+        <ul>
           <a href="https://brunch.co.kr/keyword/%EC%A7%80%EA%B5%AC%ED%95%9C%EB%B0%94%ED%80%B4_%EC%84%B8%EA%B3%84%EC%97%AC%ED%96%89?q=g">
             <li>
               <div class="key-cell">
@@ -250,16 +251,75 @@
             </li>
           </a>
       </ul>
+      </div>
+      
     </div>
     <!--추천작가-->
     <div id="writers">
       <div class="menu-name">
-        <h3>B R U N C H &nbsp  W R I T E R S</h3>
-        <P>브런치 추천 작가</P>
+          <h3>B R U N C H &nbsp  W R I T E R S</h3>
+          <P>브런치 추천 작가</P>
+        </div>
+        <div id="writer-btn"  class="clear">
+          <ul>
+            <a href=""><li><div class="btn">영화</div></li></a>
+            <a href=""><li><div class="btn">사진</div></li></a>
+            <a href=""><li><div class="btn">IT</div></li></a>
+          </ul>
+        </div>
+      <div class="writer-cell" >
+        <div>
+          <ul>
+            <a href="https://brunch.co.kr/@liebesong">
+              <li class="writer-cells" >
+                <div>
+                  <div class="writer-img"><img src="img/프로필 (1).png"></div>
+                  <h3 class="writer-name">Rabbitgumi</h3>
+                  <p class="writer-info">회사원</p>
+                  <p class="writer-memo">매주 신작영화를 한편씩 관람합니다. 영화에 대한 리뷰보다는 영화를 보고 든 생각들을 씁니다. 영화의 긍정적인 부분을 전달하려 합니다.</p>
+                  <div class="writer-btns clear">
+                  <ul>
+                    <a href="">
+                      <li><div class="btn writer-btn">영화</div></li>
+                    </a>
+                    <a href="">
+                      <li><div class="btn writer-btn">육아</div></li>
+                    </a>
+                    <a href="">
+                      <li><div class="btn writer-btn">•••</div></li>
+                    </a>
+                  </ul>
+                  </div>
+                </div>
+              </li>
+            </a>
+            <a href="https://brunch.co.kr/@liebesong">
+              <li>
+                <div>
+                  <div class="writer-img"><img src="img/프로필 (1).png"></div>
+                  <h3 class="writer-name">Rabbitgumi</h3>
+                  <p class="writer-info">회사원</p>
+                  <p class="writer-memo">매주 신작영화를 한편씩 관람합니다. 영화에 대한 리뷰보다는 영화를 보고 든 생각들을 씁니다. 영화의 긍정적인 부분을 전달하려 합니다.</p>
+                  <div class="writer-btns clear">
+                  <ul>
+                    <a href="">
+                      <li><div class="btn writer-btn">영화</div></li>
+                    </a>
+                    <a href="">
+                      <li><div class="btn writer-btn">육아</div></li>
+                    </a>
+                    <a href="">
+                      <li><div class="btn writer-btn">•••</div></li>
+                    </a>
+                  </ul>
+                  </div>
+                </div>
+              </li>
+            </a>
+          </ul>
+        </div>
       </div>
-    <div>
-        
-      </div>
+      
     </div>
     <!--작가지원-->
     <div>
@@ -282,35 +342,41 @@
         <p>C.S.Lewis</p>
       </div>
       <div id="footer-second">
-        <ul>
-          <li><a href="">브런치 이용안내</a></li>
-          <li><a href="">작가신청</a></li>
-          <li><a href="">작가 지원 프로젝트</a></li>
-          <li><a href="">청소년 보호정책</a></li>
-          <li><a href="">운영정책</a></li>
+        <ul class="footer-list">
+          <li><a href="https://brunch.co.kr/magazine/brunchupdate">브런치 이용안내</a></li>
+          <li><a href="https://brunch.co.kr/">작가신청</a></li>
+          <li><a href="https://brunch.co.kr/special/list">작가 지원 프로젝트</a></li>
+        </ul>
+        <ul class="footer-list">
+          <li><a href="https://www.kakao.com/policy/safeguard?lang=ko">청소년 보호정책</a></li>
+          <li><a href="https://brunch.co.kr/policy/oppolicy">운영정책</a></li>
         </ul>
       </div>
       <div id="footer-third">
-        <ul>
-          <li><a href="">이용약관</a></li>
-          <li><a href="">이전 이용약관</a></li>
-          <li><a href="">카카오 개인정보 처리방침</a></li>
-          <li><a href="">제휴안내</a></li>
-          <li><a href="">고객센터</a></li>
+        <ul class="footer-list">
+          <li><a href="https://www.kakao.com/policy/terms">이용약관</a></li>
+          <li><a href="https://brunch.co.kr/policy/terms">이전 이용약관</a></li>
+          <li><a href="https://www.kakao.com/policy/privacy?lang=ko"><b>카카오 개인정보 처리방침</b></a></li>
+          <li><a href="https://with.kakao.com/brunch">제휴안내</a></li>
+          <li><a href="https://cs.kakao.com/helps?category=89&locale=ko&service=54">고객센터</a></li>
         </ul>
       </div>
       <div id="footer-fourth" class="clear">
-        <ul>
-          <li><a href="">브런치팀 공지사항</a></li>
-          <li><a href="">브런치 카카오톡 채널</a></li>
-          <li><a href="">브런치 인스타그램</a></li>
-          <li><a href="">브런치 페이스북</a></li>
+        <ul class="footer-list">
+          <li><a href="https://brunch.co.kr/@brunch#info">브런치팀 공지사항</a></li>
+          <li><a href="https://pf.kakao.com/_YYcYV">브런치 카카오톡 채널</a></li>
+          <li><a href="https://www.instagram.com/brunch.co.kr">브런치 인스타그램</a></li>
+          <li><a href="https://www.facebook.com/brunch.co.kr">브런치 페이스북</a></li>
         </ul>
       </div>
       
     </div>
     <div id="footer-bottom">
       <div>©Kakao Corp.</div>
+      <ul id="store-logo">
+        <li><img src="img/google.png"></li>
+        <li><img src="img/apple.png"></li>
+      </ul>
     </div>
   </body>
 </html>

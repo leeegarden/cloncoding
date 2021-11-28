@@ -1,0 +1,246 @@
+@charset "utf-8";
+
+/** 공통적용
+-----------------------------------------------------------*/
+body{
+    width: 1280px;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.clear::after {
+    content: '';
+    display: block;
+    float: none;
+    clear: both;
+  }
+
+  .btn a{
+    display: inline-block;
+    border:2px solid #fff;
+    margin: 5px auto;
+    padding: 20px;
+    border-radius:5%;
+  }
+/*헤더
+---------------------------------------------------------*/
+#navi{
+  background-color: rgb(251, 249, 242);
+  width:100%;
+  height:140px;
+  border-top: 2px solid #000;
+  position:fixed;
+  z-index: 1000;
+  margin-top:-140px;
+}
+#logo{
+  float: left;
+  
+}
+#logo img {
+  width:90px;
+  margin: 20px 0 0 20px;
+}
+#top-menu ul {
+  float: right;
+  margin:10px 50px 3px 0;
+}
+#top-menu ul > li{
+  display:inline-block;
+  margin-left:30px;
+}
+#top-menu ul > li >a{
+  color:#000;
+}
+#bottom-menu ul {
+  float: right;
+margin:30px;
+;
+}
+#bottom-menu ul>li {
+  display:inline-block;
+  margin-left:50px;
+}
+/**신한카드
+----------------------------------------------------------*/
+#shinhan {
+  position:absolute;
+  position:fixed;
+  z-index: 1200;
+  left:1070px;
+  top:200px;
+}
+#shinhan img{
+  width:170px;
+}
+/**시즌메뉴
+-----------------------------------------*/
+#season{
+  margin-top:140px;
+  height: 600px;
+  background-color:rgb(216, 36, 36);
+  background-image:url('../img/season_bg.jpg');
+  background-size: 100%;
+}
+#season1 {
+  padding:50px 0 0 30px;
+  width:350px;
+}
+#season2{
+  position:absolute;
+  width:270px;
+  top:380px;
+  left:400px;
+}
+#season3{
+  position:absolute;
+  width:500px;
+  top:170px;
+  left:520px;
+}
+#season4{
+  position:absolute;
+  width:230px;
+  top:300px;
+  left:930px;
+}
+#season-btn{
+  position:absolute;
+  top:350px;
+  left:150px;
+}
+/**공지사항
+----------------------------------------------------------*/
+#notice{
+  display: inline-block;
+  background:#000;
+  width:50%;
+}
+#promotion{
+  display: inline-block;
+  background:rgb(251, 249, 242);
+  width:49%;
+}
+/**블렌드 커피
+-----------------------------------------------------------*/
+#blend{
+  background-image:url('../img/blander_bg.jpg');
+  background-size: 130%;
+  height: 500px;
+}
+#blend1{
+  width:460px;
+  position:absolute;
+  top:800px;
+  left:300px;
+}
+#blend2{
+  width:200px;
+  position:absolute;
+  top:870px;
+  left: 700px;
+}
+/** 리저브*/
+#reserve{
+  background:rgb(9, 68, 48);
+  height: 355px;
+}
+#reserve1{
+  position:absolute;
+  z-index: 8;
+  top:1350px;
+  left: 200px;
+  width:500px;
+}
+#reserve-btn{
+  position:absolute;
+  z-index:8;
+  top:1420px;
+  left: 400px;
+  font-size:10px;
+}
+#reserve2{
+  width:140%;
+  margin-left:-340px;
+}
+/**리저브 메거진
+----------------------------------------------------------*/
+#reserve-magazine{
+  background-image:url('../img/reserve_bg_pc.png');
+  background-size:110%;
+  margin-left:-400px;
+  margin-top:70px;
+  height:326px;
+}
+#reserve-magazine1{
+  position:absolute;
+  top:1750px;
+  left: 60px;
+}
+#reserve-magazine-btn{
+  position:absolute;
+  top:1850px;
+  left: 300px;
+  border:2px solid #000;
+  border-radius: 10%;
+}
+#reserve-magazine-btn a{
+  color:#000;
+}
+#reserve-magazine2{
+  position:absolute;
+  top:1600px;
+  left: 700px;
+}
+
+/** 하단 영역
+-----------------------------------------------------------*/
+#footer {
+  background-color: rgb(46, 41, 41);
+  height:1500px;
+}
+#footer-left {
+  width:1000px;
+  margin-left:140px;
+}
+#footer-left ul{
+  float: left;
+  width: 280px;
+  height: 190px;
+  padding: 20px;
+  margin-top: 20px;
+}
+#footer-left ul li{
+  margin-bottom: 10px;
+}
+#footer-left ul li>a{
+  color: #fff;
+}
+.footer-list {
+  padding-bottom: 10px;
+  font-size: 19px;
+}
+#footer-right img {
+  margin-top:40px;
+  width: 20px;
+}
+#footer-bottom{
+  margin-left: 20px;
+}
+#footer-bottom li{
+  display: inline-block;
+  margin-top: 50px;
+  border-right: 1px solid #eee;
+  padding: 0 10px;
+  font-size:14px;
+}
+#footer-btn a{
+  display: inline-block;
+  border:2px solid #fff;
+  margin: 5px auto;
+  padding: 20px;
+  border-radius:5%;
+}

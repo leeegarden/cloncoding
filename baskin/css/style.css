@@ -75,13 +75,20 @@ a {
 /*메인컨텐츠
 ------------------------------------------------------*/
 /** navibar */
-#navi {
-    width:90%;    
+#navi { 
+    width: 1280px;
     height: 40px;
-    margin-left: auto;
-    margin-right: auto;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
+    overflow: hidden;
+    position: absolute;
+    z-index: 7;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    transition: height 0.3s;
+    background-image:url(../img/navi-bg.jpg);
+    background-size: 100%;
 }
 
 #navi ul {
@@ -94,38 +101,109 @@ a {
     margin-left:20px;
     width:15%;
 }
-#navi-log li {
+#navi-log>li {
     display: inline;
-    float: left;
     margin-left: 20px;
 }
 #navi-menu {
     width: 80%;
 }
-#navi-menu li {
-    display: inline;
-    float: left;
+#navi-menu >li {
+    display: inline-block;
     width:16%;
 
 }
-
-#navi-hv {
+.nav-tab {
+    margin: 45px;
+    font-size: 12px;
+}
+.nav-tab li {
+    width:100px;
+    font-family: 명조;
+    margin-top:10px;
+}
+.nav-tab li img{
+    width: 160px;
+    margin:-10px 0 -50px -10px;
+}
+/** 검색창*/
+#search-box {
+    background-color: #fff;
     width: 100%;
-    height: 100px;
-    display: none;
+    height: 0px;
+    position: absolute;
+    z-index: 10;
+    top:175px;
+    font-size: 12px;
+    overflow: hidden;
+    transition: height 0.3s;
+    
+}
+#search-box li{
+float: left;
 }
 
-#navi-hv:hover{
-    display: block;
+.search-box-cell{
+    display: inline-block;
+    float: left;
+    width:560px;
+    height:10px;
+    padding: 30px;
 }
 
+#search-box-btn{
+    position: absolute;
+    border: 1px solid rgb(255, 132, 169);
+    border-radius:20px;
+    background-color:rgb(255, 132, 169);
+    color: #fff;
+    width:120px;
+    height:30px;
+    top:180px;
+    left:550px;
+
+}
+#product select{
+    width:130px;
+    height:30px;
+    margin-left: 20px;
+    margin-top:-10px;
+    border: 1px solid #ddd;
+}
+#product input[type=text]{
+    background-color:#eee;
+    border: 1px solid #fff;
+    margin-left: 20px;
+    margin-top:-10px;
+    width:200px;
+    height:30px;
+}
+
+#hashtag input[type=text]{
+    background-color:#eee;
+    border: 1px solid #fff;
+    margin-left: 20px;
+    margin-top:-10px;
+    width:484px;
+    height:30px;
+    color: rgb(255, 82, 134);
+}
+.hashtag-cell {
+    color: rgb(255, 82, 134);
+}
 /**정지 배너*/
 #bn-s img {
     width: 100%;
+    margin-top:40px;
 }
-.bn-b img {
+#bn-b{
+    position:absolute;
+    z-index: 100;
+    top: 176px;
+    left:1px;
+}
+#bn-b img{
     width: 100%;
-    margin : 2px 0;
 }
 /**롤링 배너*/
 .swiper-slide img {
@@ -208,6 +286,7 @@ a {
 
 
 /**sns*/
+
 #sns ul li span {
     margin-left: 5px;
     margin-right: 5px;
@@ -217,9 +296,16 @@ a {
 }
 
 /**인스타 이미지*/
+
+#insta-title>img {
+    position:absolute;
+    left: 500px;
+}
 #insta ul {
     width:90%;
-    margin: 100px auto;
+    margin: 60px auto 100px auto;
+    border-top: 1px solid rgb(200, 189, 153);
+    padding-top: 48px;
 }
 
 #insta ul li{
@@ -234,25 +320,24 @@ a {
 }
 /**footer
 ------------------------------------------------*/
-/**#footer-top {
+#footer-top {
     height: 60px;
     width: 100%;
     border-top: 1px solid rgb(255, 206, 45);
-    margin-top:50px;
+    margin:12px auto;
     padding-top: 18px;
-    padding-right: 100px;
-}*/
+}
 #footer-top ul {
-    margin-top:12px;
-    width: 100%;
+    margin:0 auto;
+    width: 80%;
     text-align: center;
-    font-size:13px;
+    font-size:12px;
 }
 
 #footer-top ul li {
     display: inline;
     float: left;
-    margin-left: 50px;
+    margin:0 27px;
 }
 
 #footer-mid {
@@ -260,9 +345,22 @@ a {
     background-color: rgb(246, 246, 246);
     height: 60px;
 }
+#footer-mid ul {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#footer-mid li{
+    float: left;
+    margin-top:13px;
+}
+#footer-mid li > select {
+    margin:6px 0 0 10px;
+}
 
 #footer-bottom {
     width: 100%;
+    height: 200px;
  font-size:5px;
  margin-bottom: 20px;
 }
@@ -272,4 +370,27 @@ a {
     margin-bottom: 40px;
 }
 
+#footer-bottom address {
+    margin-top:20px;
+}
+/**슬라이드바 버튼디자인*/
+.swiper-button-next {
+    background: url(/baskin/img/btn_banner_next.png) no-repeat;
+    background-size: 400% auto;
+    background-position: center;
+  }
+  
+  .swiper-button-prev {
+    background: url(/baskin/img/btn_banner_prev.png) no-repeat;
+    background-size: 400% auto;
+    background-position: center;
+  }
+  
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    display: none;
+  }
 
+  .swiper-pagination-bullet{
+      background: #000;
+  }
