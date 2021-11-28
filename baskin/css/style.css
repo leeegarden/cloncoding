@@ -129,7 +129,7 @@ a {
 /** 검색창*/
 #search-box {
     background-color: #fff;
-    width: 100%;
+    width: 1280px;
     height: 0px;
     position: absolute;
     z-index: 10;
@@ -149,6 +149,9 @@ float: left;
     width:560px;
     height:10px;
     padding: 30px;
+}
+#hashtag div > span{
+    color:rgb(255, 132, 169);
 }
 
 #search-box-btn{
@@ -196,15 +199,7 @@ float: left;
     width: 100%;
     margin-top:40px;
 }
-#bn-b{
-    position:absolute;
-    z-index: 100;
-    top: 176px;
-    left:1px;
-}
-#bn-b img{
-    width: 100%;
-}
+
 /**롤링 배너*/
 .swiper-slide img {
     width: 100%;
@@ -316,6 +311,7 @@ float: left;
 .instaimg {
   width: 200px;
   height: 200px;
+  margin-top: 3px;
   
 }
 /**footer
@@ -353,6 +349,7 @@ float: left;
 #footer-mid li{
     float: left;
     margin-top:13px;
+   
 }
 #footer-mid li > select {
     margin:6px 0 0 10px;
