@@ -1,10 +1,10 @@
 @charset "utf-8";
 /**
-@filename :style.css
+ * @filename :style.css
  * @author   : 이정원(j_one32@naver.com)
  * @descriptions :index.html의 전체 css
  --------------------------------------------------------*/
-/*헤더
+/*공통css
 ---------------------------------------------------------*/
 body{
     text-align: center;
@@ -16,6 +16,15 @@ a {
     text-decoration: none;
     color:#333;
 }
+.clear::after {
+    content: '';
+    display: block;
+    float: none;
+    clear: both;
+  }
+
+
+/** 헤더 */
 #header {
 
     position: relative;
@@ -25,15 +34,6 @@ a {
     border-top: 3px solid rgb(255, 82, 134);
     background-image: url('../img/bg_header.jpg');
 } 
-
-.clear::after {
-    content: '';
-    display: block;
-    float: none;
-    clear: both;
-  }
-
-/** 헤더 sns*/
 #header-sns {
    float: left;
    margin-top:40px;
