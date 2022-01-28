@@ -10,6 +10,7 @@ body{
     text-align: center;
     width: 1280px;
     overflow-x: hidden;
+    margin: 0 auto;
     
 }
 a {
@@ -30,7 +31,7 @@ a {
     position: relative;
     height: 130px;
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
     border-top: 3px solid rgb(255, 82, 134);
     background-image: url('../img/bg_header.jpg');
 } 
@@ -81,6 +82,7 @@ a {
 ------------------------------------------------------*/
 /** navibar */
 #navi { 
+    margin: 0 auto;
     width: 1280px;
     height: 40px;
     border-top: 1px solid #ddd;
@@ -132,7 +134,7 @@ a {
     margin:-10px 0 -50px -10px;
 }
 /** 검색창*/
-#search-box {
+.search-box {
     background-color: #fff;
     width: 1280px;
     height: 0px;
@@ -144,6 +146,18 @@ a {
     transition: height 0.3s;
     
 }
+.search-box.active{
+    background-color: #fff;
+    width: 1280px;
+    height: 245px;
+    position: absolute;
+    z-index: 10;
+    top:175px;
+    font-size: 12px;
+    overflow: hidden;
+    transition: height 0.3s;
+}
+
 #search-box li{
 float: left;
 }
@@ -299,7 +313,8 @@ float: left;
 
 #insta-title>img {
     position:absolute;
-    left: 500px;
+    transform: translate(-50%, -50%);
+    
 }
 #insta ul {
     width:90%;
